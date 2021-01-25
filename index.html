@@ -1,353 +1,207 @@
-<!DOCTYPE html>
-<html lang="zxx">
-
+﻿<!DOCTYPE html>
+<html>
 <head>
-   
-    <meta charset="UTF-8">
-    <meta name="description" content="Videograph Template">
-    <meta name="keywords" content="Videograph, unica, creative, html">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Anton Linh</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <title>Antoine Linh</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,900,700italic,700,600italic,600,400italic">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <style>
+        body, span {
+            color: #fff
+        }
+
+        img, span {
+            display: block
+        }
+
+        body {
+            font-family: 'Chakra Petch', sans-serif;
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background: #222;
+            font-weight: 100
+        }
+
+        div {
+            display: inline-block;
+            line-height: 1;
+            padding: 20px;
+            font-size: 40px
+        }
+
+        span {
+            font-size: 20px
+        }
+
+        #days, #hours, #minutes {
+            font-size: 100px
+        }
+
+        #days {
+            color: #db4844
+        }
+
+        #hours {
+            color: #f07c22
+        }
+
+        #minutes {
+            color: #f6da74
+        }
+
+        #seconds {
+            font-size: 50px;
+            color: #abcd58
+        }
+
+        #timer {
+            padding-top: 0
+        }
+    </style>
+    <link rel="shortcut icon" href="img/logo.ico" />
+    <script>
+        function onReady(callback) {
+        var intervalid = window.setInterval(function() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+        window.clearInterval(intervalId);
+        callback.call(this);
+        }
+        }, 1000);
+        }
+
+        function setVisible(selector, visible) {
+        document.querySelector(selector).style.display = visible ? 'block' : 'none';
+        }
+
+        onReady(function() {
+        setVisible('.page', true);
+        setVisible('.container', false);
+        });
+    </script>
 </head>
 
-<body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
+<body class="preloading">
+    <div class="container">
+        <section class="section">
+            <div class="loader loader-1">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+            </div>
+            
+        </section>
+        
     </div>
-
-    <!-- Header Section Begin -->
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="header__logo">
-                        <a href="./index.html"><img class="newne" src="img/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="header__nav__option">
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                                <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="./portfolio.html">Memories and Hobbies</a></li>
-                                <li><a href="./blog.html">Blog</a></li>
-                                <li><a href="./contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                        <div class="header__nav__social">
-                            <a href="https://www.facebook.com/antoinelinh2002/"><i class="fa fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/antoine_linh_2002/"><i class="fa fa-instagram"></i></a>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="mobile-menu-wrap"></div>
+    <div class="page">
+        <div style="text-align: center; padding-bottom: 0;">
+            <br />
+            <script type="text/javascript">
+                var myLogo = ['https://cdn.discordapp.com/attachments/795021159922008064/803378286473379860/tuoi-tan-suu-2021-sinh-thang-nao-tot-1.png'];
+                var rand = myLogo[Math.floor(Math.random()*myLogo.length)];
+                document.write('<img src="'+rand+'" alt="logo" width="400" class="animated infinite pulse">');
+            </script>
         </div>
-    </header>
-    <!-- Header End -->
 
-    <!-- Hero Section Begin -->
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="hero" >
-    <source src="img/back5.mp4" type="video/mp4">
-  </video>
-    <!-- Hero Section End -->
-
-    <!-- Services Section Begin -->
-    <section class="services spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="services__title">
-                        <div class="section-title">
-                            <span>My skill</span>
-                            <h2>What can I do?</h2>
-                        </div>
-                        <p>"The important thing is to not stop questioning. Curiosity has its own reason for existing."</p>
-                        <span style="color: #ffffff">Albert Einstein</span>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-1.png" alt="">
-                                </div>
-                                <h4>Edit photo and design logo</h4>
-                                <p>With Adobe Illustrator and Adobe Photoshop (Intermediate)</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-2.png" alt="">
-                                </div>
-                                <h4>Coding on C++, HTML, CSS</h4>
-                                <p>Using Visual Studio 2019 and Sublime Text 3 as a tools to complete the program and website (Beginner)</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-3.png" alt="">
-                                </div>
-                                <h4>Create and edit video with effect</h4>
-                                <p>Using Adobe Premiere Pro and Adobe After Effect to create and edit video (Intermediate).</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-4.png" alt="">
-                                </div>
-                                <h4>Microsoft Office</h4>
-                                <p>I can use Microsoft Office tools (Intermediate)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div id="timer">
+            <!--<div id="days"></div>-->
+            <div id="days"></div>
+            <div id="hours"></div>
+            <div id="minutes"></div>
+            <div id="seconds"></div>
         </div>
-    </section>
-    <!-- Services Section End -->
 
-    <!-- Work Section Begin -->
-    <div class="worknew">
-        <img src="img/work1.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script>
+            let timeout = null;
+
+            function makeTimer() {
+            // Edit Here
+            //---- let endTime = new Date("'02/14/2018 23:59:59 GMT+0700 (SE Asia Standard Time)"); ----
+            let endTime = new Date("'02/12/2021 00:00:00 GMT+0700 (SE Asia Standard Time)");
+            endTime = (Date.parse(endTime) / 1000);
+
+            let now = new Date();
+            now = (Date.parse(now) / 1000);
+
+            let timeLeft = endTime - now,
+            days = Math.floor(timeLeft / 86400),
+            hours = Math.floor((timeLeft - (days * 86400)) / 3600),
+            minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60),
+            seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+            if (hours === 0 && minutes === 0 && seconds === 0) {
+            clearTimeout(timeout);
+            } else {
+            if (hours < "10") {
+            hours = "0" + hours;
+            }
+            if (minutes < "10") {
+            minutes = "0" + minutes;
+            }
+            if (seconds < "10") {
+            seconds = "0" + seconds;
+            }
+
+            $("#days").html(days + "<span>Days</span>");
+            $("#hours").html(hours + "<span>Hours</span>");
+            $("#minutes").html(minutes + "<span>Minutes</span>");
+            $("#seconds").html(seconds + "<span>Seconds</span>");
+
+            timeout = setTimeout(makeTimer, 1000);
+            }
+            }
+
+            makeTimer();
+        </script>
+        <button id="1" onClick="window.location.href = 'index1.html';"><span>Chuyển ngay sang trang chính</span></button>
+        <span id="demo"></span>
+        <script>
+            var timeleft = 500;
+            var downloadTimer = setInterval(function(){
+            if(timeleft == 0){
+            window.location.href = 'index1.html';
+            document.getElementById("demo").innerHTML = "Finished";
+            } else {
+            document.getElementById("demo").innerHTML = timeleft + " giây chuyển sang trang chính";
+            }
+            timeleft -= 1;
+            }, 1000);
+        </script>
+        <style type="text/css">
+            body {
+                padding-bottom: 20px
+            }
+        </style>
+        <span id="anhien">
+            <img style="position:fixed;z-index:9999;top:0;left:0;" src="http://4.bp.blogspot.com/-Vlt_TV7Q9V8/UsA7lwMZryI/AAAAAAAAA3Q/ref7HQc1968/s1600/banner_left.png" _cke_saved_src="http://4.bp.blogspot.com/-Vlt_TV7Q9V8/UsA7lwMZryI/AAAAAAAAA3Q/ref7HQc1968/s1600/banner_left.png" />
+            <img style="position:fixed;z-index:9999;top:0;right:0;" src="http://4.bp.blogspot.com/-A85wPjYE2BM/UsA7mDDQWmI/AAAAAAAAA3U/R9bxy6zSrLs/s1600/banner_right.png" />
+        </span>
+        <div style="position:fixed;z-index:9999;bottom:-50px;left:0;width:100%;height:104px;background:url(https://3.bp.blogspot.com/-uQrQaR3IkxE/WF9dDUUVLLI/AAAAAAAAAdw/VKNA5q7FJSQX5OWofOiPafEEENaoBcY9wCLcB/s1600/nentet.png) repeat-x bottom left;"></div>
+        <img style="position:fixed;z-index:9999;bottom:20px;left:20px" src="http://3.bp.blogspot.com/-4Zt-ZB4tols/UsA_qIR0w9I/AAAAAAAAA3w/Ffyy-5OqGec/s320/banner_header.png" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type='text/javascript'>
+            $(document).ready(function(){
+            if ($(window).width() < 1300) {
+            $("#anhien").css("display", "none");
+            }
+            $(window).resize(function(){
+            if ($(window).width() < 1300) {
+            $("#anhien").css("display", "none");
+            }
+            else{
+            $("#anhien").css("display", "");
+            }
+            });
+            });
+        </script>
     </div>
-    
-    <!-- Work Section End -->
+        
 
-    <!-- Counter Section Begin -->
-    <section class="counter">
-        <div class="container">
-            <div class="counter__content">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-1.png" alt="">
-                                <h2 class="counter_num">8</h2>
-                                <p>Years learn french</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item second__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-2.png" alt="">
-                                <h2 class="counter_num">10</h2>
-                                <p>years passion on computer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item third__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-3.png" alt="">
-                                <h2 class="counter_num">5</h2>
-                                <p>Happy clients</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item four__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-4.png" alt="">
-                                <h2 class="counter_num">5</h2>
-                                <p>Compled Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Counter Section End -->
-
-    <!-- Team Section Begin -->
-    <section class="team spad set-bg" data-setbg="img/team-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title team__title">
-                        <span>Nearly game tried</span>
-                        <h2>Game passion</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item set-bg" data-setbg="img/team/asunity.jpg">
-                        <div class="team__item__text">
-                            <h4>Assassin's creed Unity</h4>
-                            <p>Ubisoft</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--second set-bg" data-setbg="img/team/naruto.jpg">
-                        <div class="team__item__text">
-                            <h4>Naruto Shippuden Ultimate Ninja Storm 4</h4>
-                            <p>Bandai Namco</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--third set-bg" data-setbg="img/team/pes2021.png">
-                        <div class="team__item__text">
-                            <h4>PES 2021</h4>
-                            <p>KONAMI</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--four set-bg" data-setbg="img/team/valorant.jpg">
-                        <div class="team__item__text">
-                            <h4>Valorant</h4>
-                            <p>Riot Game</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Team Section End -->
-
-    <!-- Latest Blog Section Begin -->
-    <section class="latest spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title center-title">
-                        <span>Our Blog</span>
-                        <h2>Blog Update</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="latest__slider owl-carousel">
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item blog1">
-                            <h4>Samsung announces the A12 and A02S, two new entry-level phones for 2021</h4>
-                            <ul>
-                                <li>Nov 29, 2020</li>
-                                <li>01 Comment</li>
-                            </ul>
-                            <p>Starting at €179 and €150 in Europe next year/p>
-                            <a href="blog-samsunga02-a12.html">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item blog2">
-                            <h4>HomePod Mini vs. Echo Dot vs. Nest Mini: Picking the best mini smart speaker</h4>
-                            <ul>
-                                <li>Nov 29, 2020</li>
-                                <li>01 Comment</li>
-                            </ul>
-                            <p>All three competent smart speakers make a good starting point for your smart home. We take a closer look at each to find the best fit for your household.</p>
-                            <a href="blog-homepod.html">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>SpaceX successfully launches second crew to space on first operational mission</h4>
-                            <ul>
-                                <li>Nov 15, 2020</li>
-                                <li>01 Comment</li>
-                            </ul>
-                            <p>Four astronauts are now on their way to the space station</p>
-                            <a href="blog-spacex.html">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Apple’s M1 Mac design emphasizes continuity over complexity</h4>
-                            <ul>
-                                <li>Nov 11, 2020</li>
-                                <li>01 Comment</li>
-                            </ul>
-                            <p>Meet the new Mac, same as the old Mac</p>
-                            <a href="blog-macbook.html">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Google’s latest AI tool turns your MS Paint doodles into freakish monsters</h4>
-                            <ul>
-                                <li>Nov 18, 2020</li>
-                                <li>01 Comment</li>
-                            </ul>
-                            <p>Another example of AI-assisted artistry</p>
-                            <a href="blog-google.html">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>The electric car industry now has its own lobbying group</h4>
-                            <ul>
-                                <li>Nov 17, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>Tesla, Uber, Rivian, and others have formed the Zero Emissions Transportation Association</p>
-                            <a href="blog-car.html">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Latest Blog Section End -->
-
-    <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__top">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__logo">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Section End -->
-
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
 </body>
-
-</html>
+        </html>
