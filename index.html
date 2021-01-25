@@ -66,38 +66,10 @@
         }
     </style>
     <link rel="shortcut icon" href="img/logo.ico" />
-    <script>
-        function onReady(callback) {
-        var intervalid = window.setInterval(function() {
-        if (document.getElementsByTagName('body')[0] !== undefined) {
-        window.clearInterval(intervalId);
-        callback.call(this);
-        }
-        }, 1000);
-        }
-
-        function setVisible(selector, visible) {
-        document.querySelector(selector).style.display = visible ? 'block' : 'none';
-        }
-
-        onReady(function() {
-        setVisible('.page', true);
-        setVisible('.container', false);
-        });
-    </script>
+    
 </head>
 
-<body class="preloading">
-    <div class="container">
-        <section class="section">
-            <div class="loader loader-1">
-                <div class="loader-outter"></div>
-                <div class="loader-inner"></div>
-            </div>
-            
-        </section>
-        
-    </div>
+<body>
     <div class="page">
         <div style="text-align: center; padding-bottom: 0;">
             <br />
