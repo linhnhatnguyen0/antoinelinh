@@ -2204,12 +2204,10 @@ body {
 }
 
 .section {
-    width: 30%;
     display: inline-block;
     text-align: center;
     min-height: 215px;
     vertical-align: top;
-    margin: 1%;
     background: #080915;
     display: block;
     position: absolute;
